@@ -17,6 +17,7 @@ commands = [
     "cd code/Foocus/FooocusAPI",
     
     # Activate virtual environment
+    "python3 -m venv venv"
     "source venv/bin/activate",
     
     # Update and install Python 3.10
@@ -38,7 +39,6 @@ commands = [
     'sudo add-apt-repository "deb [arch=amd64] https://download.docker.com/linux/ubuntu focal stable"',
     "sudo apt-get update",
     "sudo apt install docker-ce",
-    "sudo systemctl status docker",
     
     # Docker cleanup and reinstallation
     "sudo apt-get purge docker-ce docker-ce-cli containerd.io docker-buildx-plugin docker-compose-plugin docker-ce-rootless-extras",
@@ -49,15 +49,15 @@ commands = [
     "sudo systemctl restart docker",
     
     # Prune Docker system
-    "docker system prune -a",
+#     "docker system prune -a",
     
     # Build and run Docker containers
     "docker-compose build",
     "docker-compose up",
     
     # Check and restart Docker
-    "sudo systemctl restart docker",
-    "sudo systemctl status docker",
+#     "sudo systemctl restart docker",
+#     "sudo systemctl status docker",
     
     # Fix port conflict in Docker configuration
     "sudo sed -i 's/1414/80/g' /path/to/nginx.conf /path/to/docker-compose.yml",
@@ -77,6 +77,7 @@ commands = [
     # Install and start Nginx
     "sudo apt update",
     "sudo apt install nginx"
+    "sudo systemctl start nginx"
 ]
 
 for command in commands:

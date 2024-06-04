@@ -1,7 +1,7 @@
 # FooocusAPI Scripts
 
 ## Introduction
-FooocusAPI is a powerful and flexible API designed to provide a wide range of functionalities for your project. This README will guide you through the setup, installation, and usage of the API.
+FooocusAPI is a powerful and flexible API designed to provide a wide range of functionalities for your project. This README provides all the codes that will guide you through the setup, installation, and usage of the API.
 
 ## Prerequisites
 Before you begin, ensure you have the following installed on your machine:
